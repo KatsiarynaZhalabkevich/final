@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    function myFunction(){
+    var min = document.getElementByName("min").innerHTML;
+    var max = document.getElementByName("max").innerHTML;
+    var url = 'https://ak.api.onliner.by/search/apartments?price%5Bmin%5D='+min+'&price%5Bmax%5D='+max+&page=1';
+console.log(url);
+    }
+    myFunction();
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="url" method="post">
+
+    <input type="text" name="min" value="min value"/>
+    <input type="text" name="max" value="max value"/>
+    <input type="submit" name="Sign in" value="Search" onclick='location.href=url'><br/>
+</form>
+
+<div id = 'content' >
+    {}
+</div>
+</body>
+</html>
